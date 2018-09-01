@@ -11,7 +11,7 @@ This project will also give you the possibility to add a custom function in whic
 
 This project has been tested with Spark structured streaming. You can decorate the functions used by your udf's . For each microbatch or call metrics will be processed.
 
-##Installation
+## Installation
 ```
 Build the jar using Sbt build.
 Move the jar into your classpath. 
