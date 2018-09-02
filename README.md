@@ -12,11 +12,15 @@ This project will also give you the possibility to add a custom function in whic
 This project has been tested with Spark structured streaming. You can decorate the functions used by your udf's . For each microbatch or call metrics will be processed.
 
 ##Installation
-```
-Build the jar using Sbt build.
-Move the jar into your classpath. 
- 
-Soon we will try to get this into maven so you can use SBT dependencies.
+``` 
+In your build.sbt:
+addCompilerPlugin("org.scalameta" % "paradise" % "3.0.0-M5" cross CrossVersion.full)
+
+In the silerback project: 
+sbt assembly
+Move the fat jar into your classpath. 
+
+Note: Soon we will try to get this into maven so you can use SBT dependencies.
 ```
 
 ## Example usage without custom function, will provide some default text in Standard output
